@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryShop - Toko Online Elegant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>LuxuryShop</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Koleksi Elegan untuk Gaya Hidup Modern</h2>
+                <p>Temukan produk berkualitas tinggi dengan desain yang timeless</p>
+                <button class="cta-button" onclick="scrollToProducts()">Jelajahi Koleksi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Produk Unggulan</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="download (1).jpeg" alt="Jam Tangan Minimalis Elegan dengan strap kulit dan case silver">
+                    <h3>Jam Tangan Minimalis</h3>
+                    <p class="price">Rp 1.250.000</p>
+                    <button class="add-to-cart" onclick="addToCart(1)">+ Keranjang</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="download.jpeg" alt="Tas Tangan Kulit Desainer warna hitam klasik dengan hardware emas">
+                    <h3>Tas Desainer Premium</h3>
+                    <p class="price">Rp 2.850.000</p>
+                    <button class="add-to-cart" onclick="addToCart(2)">+ Keranjang</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="download.png" alt="Kacamata Hitam Premium dengan frame emas dan lensa gelap">
+                    <h3>Kacamata Premium</h3>
+                    <p class="price">Rp 850.000</p>
+                    <button class="add-to-cart" onclick="addToCart(3)">+ Keranjang</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="download (2).jpeg" alt="Dompet Kulit Modern dengan multiple slot kartu dan kompartemen koin">
+                    <h3>Dompet Kulit Modern</h3>
+                    <p class="price">Rp 650.000</p>
+                    <button class="add-to-cart" onclick="addToCart(4)">+ Keranjang</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="download (3).jpeg" alt="Kalung Mutiara Elegan dengan rantai silver dan clasp">
+                    <h3>Kalung Mutiara</h3>
+                    <p class="price">Rp 1.750.000</p>
+                    <button class="add-to-cart" onclick="addToCart(5)">+ Keranjang</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="download (4).jpeg" alt="Lampu Meja Modern dengan finish brass dan arm yang dapat disesuaikan">
+                    <h3>Lampu Meja Modern</h3>
+                    <p class="price">Rp 950.000</p>
+                    <button class="add-to-cart" onclick="addToCart(6)">+ Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+                <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxuryShop</h3>
+                    <p>Menghadirkan produk elegan untuk gaya hidup modern Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>Email: info@luxuryshop.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxuryShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
